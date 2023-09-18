@@ -48,7 +48,6 @@ public class QuickCalculator {
         BFCalculator calc = new BFCalculator();
         InteractiveCalculator calc2 = new InteractiveCalculator();
         for (int i = 0; i < commands.length; i++) {
-            System.out.printf("%s\n", commands[i]);
             if (commands[i].contains("STORE") == true) {
                 String[] StoreArr = commands[i].split(" ");
                 calc.store(StoreArr[1].toCharArray()[0], result, fractions, registerArray, pen);// passing the input and
